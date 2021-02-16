@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+	<title>Personal Portfolio</title>
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!---Fontawsome CDN--->
+	<link 
+	rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+	integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+	crossorigin="anonymous"/>
+
+	<!---Google Fonts--->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+
+	<!---Maptiler (Map Api)--->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" />
+
+	<!---Animation on Scroll--->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+	<header class="header">
+    	<nav id="navbar" class="nav-bar">
+      		<div class="container-fluid">
+        		<a href="index.html" class="logo">
+          			<img src="img/logo.png" alt="logo">
+        		</a>
+
+        		<div class="nav_button">
+					<span class="nav_icon"></span>
+				</div>
+
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#about" class="nav-link">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a href="#projects" class="nav-link">Works</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contactus" class="nav-link">Contact Me</a>
+					</li>
+				</ul>
+
+        		<ul class="icons">
+          			<li class="icon"><a class="icn" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+          			<li class="icon"><a class="icn" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+          			<li class="icon"><a class="icn" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+          			<li class="icon"><a class="icn" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+          			<li class="icon"><a class="icn" href="https://www.github.com"><i class="fab fa-github"></i></a></li>
+        		</ul>
+      		</div>
+    	</nav>
+  	</header>
+
+	<section id="welcome-section" class="welcome-section">
+		<div class="container">
+			<h1 class="title-welcome-section"><span class="span-title">Hi!</span> I'am Venn Edward Nicolas.</h1>
+      		<p class="paragraph-welcome-section">a BS Information Technology Student</p>
+		</div>
+
+		<a href="#" class="go-top"><i class="fas fa-arrow-up"></i></a>
+    </section>
+
+    <section class="about" id="about">
+			<div class="container-fluid">
+				<div class="two-columns-grid-about third-grid">
+					<div class="two-columns-grid" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+						<div class="owner">
+							<div class="top-owner">
+								<h2 class="section-title owner-title" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">Owner</h2>
+								<img src="img/owner.png" class="own" alt="owner">
+							</div>
+						</div>
+
+						<div class="owner-paragraph">
+							<div class="owner-par">
+								<h2 class="owner-name">Venn Edward D. Nicolas</h2>
+								<h2 class="owner-pos">BS Information Technology Student</h2>
+								<p class="owner-description">Hi! I'm Venn Edward D. Nicolas and im currently taking up Bachelor of Science in Information Technology at the University of the Cordilleras, Baguio. Im from the town of Rosales, province of Pangasinan. To know more about me, please click the button below.</p>
+								<div class="btn">
+									<a href="https://www.facebook.com/Diagram.Veeeeenn/" class="btn abt-btn">About Me</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="location" id="loc" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+						<h2 class="section-title location-title" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">Location</h2>
+						<div id="map" class="map" ></div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+    <section id="projects" class="projects">
+      	<h2 class="title-project-section">
+      		These are Some of My Projects
+  		</h2>
+  		<div class="container">
+  		<div class="projects-grid">
+      		<div class="project-tile" data-aos="fade-down" data-aos-offset="400" data-aos-duration="1000">
+        		<a class="link-project-tile" href="https://vedonic-bnd.github.io/Resume/">
+          			<img class="image-project-tile" src="img/resume.png" alt="Resume"/>
+          			<p class="title-project-tile">Resume</p>
+        		</a>
+      		</div>
+
+      		<div class="project-tile" data-aos="fade-down" data-aos-offset="400" data-aos-duration="1000">
+        		<a class="link-project-tile" href="https://vedonic-bnd.github.io/Tribute/">
+          			<img class="image-project-tile" src="img/tributePage.png" alt="Tribute Page"/>
+          			<p class="title-project-tile">Tribute Page</p>
+        		</a>
+      		</div>
+
+      		<div class="project-tile" data-aos="fade-down" data-aos-offset="400" data-aos-duration="1000">
+        		<a class="link-project-tile" href="https://vedonic-bnd.github.io/Survey-Form/">
+          			<img class="image-project-tile" src="img/surveyForm.png" alt="Survey Form"/>
+          			<p class="title-project-tile">Survey Form</p>
+        		</a>
+      		</div>
+
+      		<div class="project-tile" data-aos="fade-down" data-aos-offset="400" data-aos-duration="1000">
+        		<a class="link-project-tile" href="https://vedonic-bnd.github.io/Product-Landing/">
+          			<img class="image-project-tile" src="img/productLandingPage.png" alt="Product Landing Page"/>
+          			<p class="title-project-tile">Product Landing Page</p>
+        		</a>
+      		</div>
+
+      		<div class="project-tile" data-aos="fade-down" data-aos-offset="400" data-aos-duration="1000">
+        		<a class="link-project-tile" href="https://vedonic-bnd.github.io/Technical-Documentation/">
+          			<img class="image-project-tile" src="img/technicalDocumentation.png" alt="Technical Documentation"/>
+          			<p class="title-project-tile">Technical Documentation</p>
+        		</a>
+      		</div>
+
+      		<div class="project-tile" data-aos="fade-down" data-aos-offset="400" data-aos-duration="1000">
+        		<a class="link-project-tile" href="https://vedonic-bnd.github.io/Personal-Portfolio/">
+          			<img class="image-project-tile" src="img/personalPortfolio.png" alt="Personal Portfolio"/>
+          			<p class="title-project-tile">Personal Portfolio</p>
+        		</a>
+      		</div>
+      	</div>
+      	</div>
+
+      	<div class="btn show-all-container">
+        	<a href="https://github.com/Vedonic-BND" class="btn btn-show-all" target="_blank">Show all <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contactus">
+        	<div class="container">
+        		<h2 class="section-title contactus-title">Contact Us</h2>
+        		<h3 class="section-subtitle">Have any questions? We'd love to hear from you.</h3>
+        		<div class="two-columns-grid">
+        			<div class="container-fluid">
+        				<form class="form-group-contact" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000" action="https://www.freecodecamp.com/email-submit" method="post">
+        					<input type="text" id="name" class="input-contact" placeholder="Your Name*"/>
+        					<input type="email" id="email" class="input-contact" placeholder="E-mail Address*" required/>
+        					<textarea type="text" id="Message" class="input-contact message" placeholder="Message"></textarea> 
+        					<div class="btn btn-contact-container">
+								<input href="#contactus" type="SUBMIT" value="SUBMIT" class="btn btn-submit">
+							</div>
+        				</form>
+        			</div>
+
+        			<div class="container-fluid">
+        				<div class="container container-contact" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000">
+        					<div class="two-columns-grid-contactus">
+        						<div class="icons icons-contact-us-top">
+        							<li class="icon"><a class="icn icn-contact-us" href="https://mail.google.com/"><i class="fas fa-mail-bulk"></i></a></li>
+        						</div>
+
+        						<div class="email-address icons-contact-us-bot">
+        							<h2 class="email-phone">vdn3903@students.uc-bcf.edu.ph</h2>
+        						</div>
+
+
+        						<div class="icons icons-contact-us-top">
+        							<li class="icon"><a class="icn icn-contact-us"><i class="fas fa-phone-alt"></i></a></li>
+        						</div>
+
+        						<div class="email-address icons-contact-us-bot">
+        							<h2 class="email-phone">(+63) 915-667-7890</h2>
+        						</div>
+        					</div>
+
+        					<ul class="icons icons-contact-us">
+								<li class="icon"><a class="icn icn-contact-us" href="https://www.linkedin.com/in/venn-edward-nicolas-63792715b/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+								<li class="icon"><a class="icn icn-contact-us" href="https://www.facebook.com/Diagram.Veeeeenn/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+								<li class="icon"><a class="icn icn-contact-us" href="https://www.instagram.com/vedonic_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+								<li class="icon"><a class="icn icn-contact-us" href="https://twitter.com/Vedonic" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								<li class="icon"><a class="icn icn-contact-us" href="https://github.com/Vedonic-BND" target="_blank"><i class="fab fa-github"></i></a></li>
+							</ul>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+    </section>
+
+
+	<footer class="footer">
+		<p class="copyright">
+			Copyright &copy; 2021 by Venn Edward Nicolas. All rights reserved.
+		</p>
+	</footer>
+
+	<!---Animation on Scroll JS--->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<!---app.js file--->
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
